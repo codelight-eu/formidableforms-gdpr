@@ -1,5 +1,5 @@
 
-=== Formidable Forms: GDPR Add-On ===
+=== GDPR for Formidable Forms ===
 Contributors: codelight
 Tags: gdpr, formidable forms
 Requires at least: 4.7
@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-The easiest way to make your Formidable Forms GDPR-compliant. Fully documented, extendable and developer-friendly.
+Toolsto help with making Formidable Forms GDPR-compliant. Fully documented, extendable and developer-friendly.
 
 == Description ==
 

@@ -26,21 +26,21 @@ class FormidableForms
 
             $fields = $this->getFormFields($form);
 
-            $title = __('Form submission:', 'gdpr') . ' ' . $form->name;
-            foreach ($entries as $entry) {
+            $title = __('Form submissions:', 'gdpr') . ' ' . $form->name;
+            foreach ($entries as $i => $entry) {
 
                 foreach ($fields as $field) {
                     if (isset($entry->metas[$field['id']])) {
-                        $data[$title][$field['label']] = $entry->metas[$field['id']];
+                        $data[$title][$i][$field['label']] = $entry->metas[$field['id']];
                     }
                 }
 
-                $data[$title]['date'] = $entry->created_at;
-                $data[$title]['ip'] = $entry->ip;
+                $data[$title][$i]['date'] = $entry->created_at;
+                $data[$title][$i]['ip'] = $entry->ip;
 
                 $entryData = maybe_unserialize($entry->description);
-                $data[$title]['url'] = $entryData['referrer'];
-                $data[$title]['user_agent'] = $entryData['browser'];
+                $data[$title][$i]['url'] = $entryData['referrer'];
+                $data[$title][$i]['user_agent'] = $entryData['browser'];
             }
         }
 
