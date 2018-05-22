@@ -21,7 +21,7 @@ class FormidableForms
             $entries = $this->getEntriesByEmail($form, $email);
 
             if (!count($entries)) {
-                return $data;
+                continue;
             }
 
             $fields = $this->getFormFields($form);

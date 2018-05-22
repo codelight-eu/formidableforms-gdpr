@@ -4,7 +4,7 @@
  * Plugin Name:       GDPR for Formidable Forms
  * Plugin URI:        https://codelight.eu/wordpress-gdpr-framework/
  * Description:       Tools to help with making Formidable Forms GDPR-compliant. Fully documented, extendable and developer-friendly.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Codelight
  * Author URI:        https://codelight.eu/
  * Text Domain:       gdpr
